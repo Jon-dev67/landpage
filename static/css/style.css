@@ -1,0 +1,99 @@
+/* Estilos Personalizados */
+
+:root {
+    --primary-color: #198754;
+    --secondary-color: #146c43;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+}
+
+.logo-img {
+    max-height: 80px;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: var(--light-color);
+}
+
+/* Cards de Produtos */
+.produto-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.produto-card .card-body {
+    padding: 1.5rem;
+}
+
+/* Benefícios */
+.beneficios-section {
+    background-color: white;
+}
+
+.beneficio-icon {
+    color: var(--primary-color);
+}
+
+/* Depoimentos */
+.depoimentos-section .card {
+    border: none;
+    border-radius: 10px;
+}
+
+/* Botões */
+.btn-success {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .display-5, .display-6 {
+        font-size: 2rem;
+    }
+    
+    .hero-section .row {
+        text-align: center;
+    }
+    
+    .produto-card .row {
+        flex-direction: column;
+    }
+    
+    .produto-card .col-md-4 {
+        width: 100%;
+    }
+    
+    .produto-card .col-md-8 {
+        width: 100%;
+    }
+}
