@@ -22,7 +22,7 @@ def index():
             'nome': 'QPS spirulina C/60 CÁPS 500MG Envio Imediato',
             'descricao': 'Inibe o apetite e impede o acúmulo de gordura corporal.',
             'imagem': 'static/images/quitosana.webp',
-            'link': 'https://s.shopee.com.br/VyoTH8LQBh'
+            'link': 'https://s.shopee.com.br/12ZEX7oT'
         },
         {
             'nome': 'PSYLLIUM 100% PURO',
