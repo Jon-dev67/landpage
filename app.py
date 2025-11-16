@@ -29,6 +29,15 @@ def index():
             'descricao': 'PSYLLIUM 100% PURO 500 Mg |Original| Flora Viva.',
             'imagem': 'static/images/produto3.webp',
             'link': 'https://s.shopee.com.br/7AViQ9BXjZ'
+        },
+        {
+            'nome': 'Creme Seca Barriga Redutor de Medidas Seca Barriguinha 250g Muriel',
+            'descricao': '''Ingredientes ativos: cafeína, centella asiática, extrato de chá verde, retinol e óleo de rosa mosqueta.
+Benefícios: promove hidratação profunda, firmeza e melhora na textura da pele, iluminando e combatendo a flacidez.
+Sustentabilidade: produto vegano, não testado em animais e com embalagem reciclável.
+Testado dermatologicamente: seguro para uso contínuo e indicado para todos os tipos de pele..''',
+            'imagem': 'static/images/seca_barriga.webp',
+            'link': 'https://s.shopee.com.br/1LXyf5X7pt'
         }
     ]
     
