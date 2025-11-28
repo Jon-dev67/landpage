@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProDentim | Advanced Oral Probiotic Formula</title>
+    <title>ProDentim | Fórmula Probiótica Oral Avançada</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17731341955"></script>
@@ -11,10 +11,22 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
       gtag('config', 'AW-17731341955');
     </script>
     <style>
+        :root {
+            --primary-color: #1e7d4e;
+            --primary-dark: #16633f;
+            --primary-light: #2e9e66;
+            --accent-color: #0f4a2c;
+            --text-color: #333333;
+            --light-bg: #f9fdfa;
+            --border-color: #e0f2e1;
+            --white: #ffffff;
+            --shadow: 0 5px 15px rgba(0,0,0,0.1);
+            --shadow-hover: 0 8px 20px rgba(30, 125, 78, 0.3);
+        }
+        
         * {
             margin: 0;
             padding: 0;
@@ -23,19 +35,25 @@
         
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #ffffff;
-            color: #333333;
+            background-color: var(--white);
+            color: var(--text-color);
             text-align: center;
             line-height: 1.6;
         }
         
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
         .header {
-            background: linear-gradient(135deg, #1e7d4e 0%, #16633f 100%);
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
             padding: 50px 20px;
-            color: white;
+            color: var(--white);
             position: relative;
             overflow: hidden;
-            border-bottom: 3px solid #0f4a2c;
+            border-bottom: 3px solid var(--accent-color);
         }
         
         .header::after {
@@ -45,22 +63,22 @@
             left: 0;
             right: 0;
             height: 10px;
-            background: linear-gradient(90deg, #0f4a2c, #1e7d4e, #0f4a2c);
+            background: linear-gradient(90deg, var(--accent-color), var(--primary-color), var(--accent-color));
         }
         
         .product-name {
-            font-size: 3.5rem;
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 10px;
-            background: linear-gradient(to right, #ffffff, #e8f5e9);
+            background: linear-gradient(to right, var(--white), #e8f5e9);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         
         .tagline {
-            font-size: 1.5rem;
+            font-size: clamp(1.2rem, 2.5vw, 1.5rem);
             font-weight: 400;
             max-width: 800px;
             margin: 0 auto;
@@ -68,18 +86,17 @@
         }
         
         .product-section {
-            padding: 60px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
+            padding: 60px 0;
         }
         
         .product-image {
             max-width: 400px;
             width: 100%;
-            margin-bottom: 40px;
+            margin: 0 auto 40px;
             border-radius: 15px;
             box-shadow: 0 10px 25px rgba(30, 125, 78, 0.2);
             transition: transform 0.3s ease;
+            display: block;
         }
         
         .product-image:hover {
@@ -95,37 +112,38 @@
         }
         
         .benefit-card {
-            background: #f9fdfa;
+            background: var(--light-bg);
             border-radius: 10px;
             padding: 25px 15px;
-            width: 280px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            flex: 1 1 250px;
+            max-width: 280px;
+            box-shadow: var(--shadow);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 1px solid #e0f2e1;
+            border: 1px solid var(--border-color);
         }
         
         .benefit-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(30, 125, 78, 0.3);
-            border-color: #1e7d4e;
+            box-shadow: var(--shadow-hover);
+            border-color: var(--primary-color);
         }
         
         .benefit-icon {
             font-size: 2.5rem;
             margin-bottom: 15px;
-            color: #1e7d4e;
+            color: var(--primary-color);
         }
         
         .benefit-title {
             font-weight: 700;
             margin-bottom: 10px;
-            color: #1e7d4e;
+            color: var(--primary-color);
         }
         
         .btn {
             display: inline-block;
-            background: linear-gradient(to right, #1e7d4e, #2e9e66);
-            color: white;
+            background: linear-gradient(to right, var(--primary-color), var(--primary-light));
+            color: var(--white);
             padding: 18px 45px;
             font-size: 1.2rem;
             font-weight: 700;
@@ -141,25 +159,25 @@
         }
         
         .btn:hover {
-            background: linear-gradient(to right, #16633f, #1e7d4e);
+            background: linear-gradient(to right, var(--primary-dark), var(--primary-color));
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(30, 125, 78, 0.6);
         }
         
         .features {
-            background-color: #f9fdfa;
+            background-color: var(--light-bg);
             padding: 50px 20px;
             border-radius: 15px;
             margin: 40px 0;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            border: 1px solid #e0f2e1;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
         }
         
         .section-title {
-            font-size: 2.2rem;
+            font-size: clamp(1.8rem, 3vw, 2.2rem);
             font-weight: 700;
             margin-bottom: 30px;
-            color: #1e7d4e;
+            color: var(--primary-color);
             position: relative;
             display: inline-block;
         }
@@ -172,7 +190,7 @@
             transform: translateX(-50%);
             width: 80px;
             height: 3px;
-            background-color: #1e7d4e;
+            background-color: var(--primary-color);
         }
         
         .ingredients-container {
@@ -183,28 +201,28 @@
         }
         
         .ingredient-card {
-            background: #ffffff;
+            background: var(--white);
             border-radius: 10px;
             padding: 20px;
             text-align: left;
-            border: 1px solid #e0f2e1;
+            border: 1px solid var(--border-color);
             transition: all 0.3s ease;
         }
         
         .ingredient-card:hover {
-            border-color: #1e7d4e;
+            border-color: var(--primary-color);
             transform: translateY(-5px);
         }
         
         .ingredient-name {
             font-weight: 700;
-            color: #1e7d4e;
+            color: var(--primary-color);
             margin-bottom: 10px;
             font-size: 1.2rem;
         }
         
         .safety-info {
-            background-color: #f9fdfa;
+            background-color: var(--light-bg);
             padding: 30px;
             border-radius: 10px;
             margin: 40px 0;
@@ -212,13 +230,13 @@
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
-            border-left: 5px solid #1e7d4e;
+            border-left: 5px solid var(--primary-color);
         }
         
         .safety-title {
             font-weight: 700;
             margin-bottom: 15px;
-            color: #1e7d4e;
+            color: var(--primary-color);
             display: flex;
             align-items: center;
         }
@@ -226,7 +244,7 @@
         .warning-icon {
             margin-right: 10px;
             font-size: 1.5rem;
-            color: #1e7d4e;
+            color: var(--primary-color);
         }
         
         .certifications {
@@ -234,16 +252,17 @@
             width: 100%;
             margin: 40px auto;
             border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: var(--shadow);
+            display: block;
         }
         
         .footer {
-            background: linear-gradient(135deg, #1e7d4e 0%, #16633f 100%);
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
             padding: 30px 20px;
             margin-top: 60px;
             color: #e8f5e9;
             font-size: 0.9rem;
-            border-top: 3px solid #0f4a2c;
+            border-top: 3px solid var(--accent-color);
         }
         
         .disclaimer {
@@ -253,114 +272,101 @@
             opacity: 0.8;
             margin-top: 15px;
         }
-        
-        @media (max-width: 768px) {
-            .product-name {
-                font-size: 2.5rem;
-            }
-            
-            .tagline {
-                font-size: 1.2rem;
-            }
-            
-            .benefit-card {
-                width: 100%;
-                max-width: 350px;
-            }
-            
-            .ingredients-container {
-                grid-template-columns: 1fr;
-            }
-        }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1 class="product-name">ProDentim</h1>
-        <p class="tagline">Advanced Oral Probiotic Formula - Supports Dental Health & Fresh Breath</p>
+        <div class="container">
+            <h1 class="product-name">ProDentim</h1>
+            <p class="tagline">Fórmula Probiótica Oral Avançada - Suporta Saúde Dental e Hálito Fresco</p>
+        </div>
     </div>
     
-    <div class="product-section">
-        <img src="ProDentim_2.png" alt="ProDentim Supplement" class="product-image">
-        
-        <a href="https://prodentim24.com/text.php#aff=jonathan2026" class="btn">Go to Official Website</a>
-        
-        <div class="benefits-container">
-            <div class="benefit-card">
-                <div class="benefit-icon">🦷</div>
-                <h3 class="benefit-title">Healthy Teeth & Gums</h3>
-                <p>Supports the health of your teeth and gums with beneficial probiotics</p>
+    <div class="container">
+        <div class="product-section">
+            <img src="ProDentim_2.png" alt="Suplemento ProDentim" class="product-image">
+            
+            <a href="https://prodentim24.com/text.php#aff=jonathan2026" class="btn">Ir para o Site Oficial</a>
+            
+            <div class="benefits-container">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🦷</div>
+                    <h3 class="benefit-title">Dentes e Gengivas Saudáveis</h3>
+                    <p>Suporta a saúde dos seus dentes e gengivas com probióticos benéficos</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">😊</div>
+                    <h3 class="benefit-title">Hálito Fresco</h3>
+                    <p>Ajuda a manter o hálito fresco equilibrando o microbioma oral</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3 class="benefit-title">Proteção Oral</h3>
+                    <p>Protege contra bactérias nocivas na boca</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌿</div>
+                    <h3 class="benefit-title">Ingredientes Naturais</h3>
+                    <p>Formulado com ingredientes naturais e cientificamente comprovados</p>
+                </div>
             </div>
             
-            <div class="benefit-card">
-                <div class="benefit-icon">😊</div>
-                <h3 class="benefit-title">Fresh Breath</h3>
-                <p>Helps maintain fresh breath by balancing oral microbiome</p>
+            <div class="features">
+                <h2 class="section-title">Fórmula Probiótica Avançada</h2>
+                <p>O ProDentim combina 3,5 bilhões de probióticos e nutrientes para apoiar sua saúde bucal e manter um equilíbrio saudável em sua boca</p>
+                
+                <div class="ingredients-container">
+                    <div class="ingredient-card">
+                        <h3 class="ingredient-name">Lactobacillus Paracasei</h3>
+                        <p>Suporta gengivas saudáveis e ajuda a manter os seios nasais livres e abertos.</p>
+                    </div>
+                    
+                    <div class="ingredient-card">
+                        <h3 class="ingredient-name">B.lactis BL-04®</h3>
+                        <p>Suporta o equilíbrio das bactérias bucais e a saúde do trato respiratório.</p>
+                    </div>
+                    
+                    <div class="ingredient-card">
+                        <h3 class="ingredient-name">Lactobacillus Reuteri</h3>
+                        <p>Ajuda com inflamação e torna sua boca mais saudável.</p>
+                    </div>
+                    
+                    <div class="ingredient-card">
+                        <h3 class="ingredient-name">Inulina</h3>
+                        <p>Ajuda as bactérias boas a crescerem em sua boca.</p>
+                    </div>
+                    
+                    <div class="ingredient-card">
+                        <h3 class="ingredient-name">Ácido Málico</h3>
+                        <p>Ajuda a manter a brancura dos dentes e é encontrado em morangos.</p>
+                    </div>
+                    
+                    <div class="ingredient-card">
+                        <h3 class="ingredient-name">Fosfato Tricálcico</h3>
+                        <p>Suporta a saúde dos dentes e ajuda a reparar o esmalte dentário.</p>
+                    </div>
+                </div>
             </div>
             
-            <div class="benefit-card">
-                <div class="benefit-icon">🛡️</div>
-                <h3 class="benefit-title">Oral Protection</h3>
-                <p>Protects against harmful bacteria in the mouth</p>
+            <div class="safety-info">
+                <h3 class="safety-title"><span class="warning-icon">⚠️</span> Informações Importantes de Segurança</h3>
+                <p>O ProDentim é um suplemento alimentar. Estas declarações não foram avaliadas pela Food and Drug Administration. Este produto não se destina a diagnosticar, tratar, curar ou prevenir qualquer doença. Consulte seu profissional de saúde antes de usar este produto, especialmente se você tiver alguma condição médica pré-existente ou estiver tomando medicamentos. Não exceda a dosagem recomendada. Mantenha fora do alcance de crianças.</p>
             </div>
             
-            <div class="benefit-card">
-                <div class="benefit-icon">🌿</div>
-                <h3 class="benefit-title">Natural Ingredients</h3>
-                <p>Formulated with natural, scientifically-backed ingredients</p>
-            </div>
+            <img src="certifications.png" alt="Certificações ProDentim" class="certifications">
+            
+            <a href="https://prodentim24.com/text.php#aff=jonathan2026" class="btn">Ir para o Site Oficial</a>
         </div>
-        
-        <div class="features">
-            <h2 class="section-title">Advanced Probiotic Formula</h2>
-            <p>ProDentim combines 3.5 billion probiotics and nutrients to support your oral health and maintain a healthy balance in your mouth</p>
-            
-            <div class="ingredients-container">
-                <div class="ingredient-card">
-                    <h3 class="ingredient-name">Lactobacillus Paracasei</h3>
-                    <p>Supports healthy gums and helps your sinuses stay free and open.</p>
-                </div>
-                
-                <div class="ingredient-card">
-                    <h3 class="ingredient-name">B.lactis BL-04®</h3>
-                    <p>Supports the balance of mouth bacteria and supports respiratory tract health.</p>
-                </div>
-                
-                <div class="ingredient-card">
-                    <h3 class="ingredient-name">Lactobacillus Reuteri</h3>
-                    <p>Helps with inflammation and makes your mouth healthier.</p>
-                </div>
-                
-                <div class="ingredient-card">
-                    <h3 class="ingredient-name">Inulin</h3>
-                    <p>Helps good bacteria grow in your mouth.</p>
-                </div>
-                
-                <div class="ingredient-card">
-                    <h3 class="ingredient-name">Malic Acid</h3>
-                    <p>Helps maintain tooth whiteness and is found in strawberries.</p>
-                </div>
-                
-                <div class="ingredient-card">
-                    <h3 class="ingredient-name">Tricalcium Phosphate</h3>
-                    <p>Supports tooth health and helps repair tooth enamel.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="safety-info">
-            <h3 class="safety-title"><span class="warning-icon">⚠️</span> Important Safety Information</h3>
-            <p>ProDentim is a dietary supplement. These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Consult your healthcare professional before using this product, especially if you have any pre-existing medical conditions or are taking medication. Do not exceed the recommended dosage. Keep out of reach of children.</p>
-        </div>
-        
-        <img src="certifications.png" alt="ProDentim Certifications" class="certifications">
-        
-        <a href="https://prodentim24.com/text.php#aff=jonathan2026" class="btn">Go to Official Website</a>
     </div>
     
     <div class="footer">
-        <p>© 2023 ProDentim. All rights reserved.</p>
-        <p class="disclaimer">These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Individual results may vary.</p>
+        <div class="container">
+            <p>© 2023 ProDentim. Todos os direitos reservados.</p>
+            <p class="disclaimer">Estas declarações não foram avaliadas pela Food and Drug Administration. Este produto não se destina a diagnosticar, tratar, curar ou prevenir qualquer doença. Resultados individuais podem variar.</p>
+        </div>
     </div>
 </body>
 </html>
